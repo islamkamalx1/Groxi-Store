@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Groxi Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- *HEADER -->
+      <header class="header">
+        <img src="images/Home/sliceHeader.png" class="header__slice" alt="" />
+        <div class="container">
+          <nav class="nav">
+            <div class="logo">
+              <img src="images/Home/Logo.png" alt="" />
+            </div>
+
+            <ul class="nav__links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="pages.html">Pages</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="header__icons">
+              <a href="error.html"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="#" id="login"><i class="fa-solid fa-user"></i></a>
+              <a href="error.html"><i class="fa-solid fa-heart"></i></a>
+              <a href="error.html"
+                ><i class="fa-solid fa-cart-shopping"></i> <span>0</span></a
+              >
+            </div>
+
+            <div class="toggle-menu">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+          </nav>
+
+          <div class="hero">
+            <div class="hero__info">
+              <span>Welcome To Our Grocery Store</span>
+              <h1>
+                Shop Online for <br />
+                Fresh grocries
+              </h1>
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate esse cillum
+                dolore eu fugiat nulla pariatur.
+              </p>
+              <div class="hero__btns">
+                <a href="shop.html" class="btn">shop now</a>
+                <a href="error.html" class="btn">read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- *BOTTOM NAV -->
+      <nav class="bottom-nav">
+        <a href="index.html" class="fas fa-home"></a>
+        <a href="about.html" class="fa-solid fa-info"></a>
+        <a href="shop.html" class="fa-solid fa-shop"></a>
+        <a href="error.html" class="fas fa-comments"></a>
+        <a href="blog.html" class="fas fa-blog"></a>
+        <a href="contact.html" class="fa-solid fa-address-book"></a>
+      </nav>
+      <!-- *LOGIN -->
+      <div class="login-form-container">
+        <div id="close-btn-login" class="fa-solid fa-xmark"></div>
+        <form action="">
+          <h3>sign in</h3>
+          <span>username</span>
+          <input
+            type="email"
+            class="box-input"
+            name="input-email"
+            id="input-email"
+            placeholder="Enter Your Email"
+          />
+          <span>password</span>
+          <input
+            type="password"
+            class="box-input"
+            name="input-pass"
+            id="input-pass"
+            placeholder="Enter Password"
+          />
+
+          <div class="checkbox">
+            <input type="checkbox" name="input-check" id="remember-me" />
+            <label for="remember-me">remember me</label>
+          </div>
+
+          <input type="submit" value="sign in" class="Btn" />
+          <p>forget password ? <a href="erroe.html">click here</a></p>
+          <p>don't have an account ? <a href="erroe.html">create one</a></p>
+        </form>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

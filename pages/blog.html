@@ -1,12 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <title>Groxi Store || Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- *HEADER -->
+      <header class="header about-header">
+        <img
+          src="../images/Home/sliceHeader.png"
+          class="header__slice"
+          alt=""
+        />
+        <div class="container">
+          <nav class="nav">
+            <div class="logo">
+              <img src="../images/Home/Logo.png" alt="" />
+            </div>
+
+            <ul class="nav__links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./shop.html">Shop</a></li>
+              <li><a href="./error.html">Pages</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="header__icons">
+              <a href="pages/error.html"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></a>
+              <a href="#" id="login"><i class="fa-solid fa-user"></i></a>
+              <a href="./error.html"><i class="fa-solid fa-heart"></i></a>
+              <a href="./error.html"
+                ><i class="fa-solid fa-cart-shopping"></i> <span>0</span></a
+              >
+            </div>
+
+            <div class="toggle-menu">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+          </nav>
+
+          <!-- *Hero -->
+          <div class="main-title">
+            <span>
+              <a href="../index.html">Home</a>
+              →
+              <a href="./shop.html">Blog</a>
+            </span>
+            <h2>Blog</h2>
+          </div>
+        </div>
+      </header>
+
+      <!-- *BOTTOM NAV -->
+      <nav class="bottom-nav">
+        <a href="../index.html" class="fas fa-home"></a>
+        <a href="./about.html" class="fa-solid fa-info"></a>
+        <a href="./shop.html" class="fa-solid fa-shop"></a>
+        <a href="./blog.html" class="fas fa-blog"></a>
+        <a href="./contact.html" class="fa-solid fa-address-book"></a>
+      </nav>
+      <!-- *LOGIN -->
+      <div class="login-form-container">
+        <div id="close-btn-login" class="fa-solid fa-xmark"></div>
+        <form action="">
+          <h3>sign in</h3>
+          <span>username</span>
+          <input
+            type="email"
+            class="box-input"
+            name="input-email"
+            id="input-email"
+            placeholder="Enter Your Email"
+          />
+          <span>password</span>
+          <input
+            type="password"
+            class="box-input"
+            name="input-pass"
+            id="input-pass"
+            placeholder="Enter Password"
+          />
+
+          <div class="checkbox">
+            <input type="checkbox" name="input-check" id="remember-me" />
+            <label for="remember-me">remember me</label>
+          </div>
+
+          <input type="submit" value="sign in" class="Btn" />
+          <p>forget password ? <a href="pages/error.html">click here</a></p>
+          <p>
+            don't have an account ? <a href="pages/error.html">create one</a>
+          </p>
+        </form>
+      </div>
+
+
+      <!-- *Testimonial -->
+      <div class="testimonial">
+        <div class="container">
+          <div class="main-title">
+            <span>Testimonial</span>
+            <h2>What our customers saying</h2>
+          </div>
+          <div class="testimonial__content">
+            <div class="testimonial__box">
+              <i class="fa-solid fa-quote-left quot"></i>
+              <p>
+                ”Quisquam est, qui dolorem ipsum quia dolor sit consectetur
+                adipisci velit sed quia non numqua eius modi tempora incidunt ut
+                labore et dolore magnam aliquam quaerat voluptatem repudia sint
+                et molestiae”
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h3>Alina Parker <span> Ceo, GTD</span></h3>
+            </div>
+            <div class="testimonial__box">
+              <i class="fa-solid fa-quote-left quot"></i>
+              <p>
+                ”Exercitationem ullam corporis suscipit laborio nisi ut aliquid
+                ex ea commodi consequatur uis autem vel eum iure reprehenderit
+                qui in ea vou velit esse quam nihil molestiae consequatur, vel
+                illum qui dolorem eum fugiat”
+              </p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h3>Kevin Andrew <span> Manager,Rex</span></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- *sponsor -->
+      <div class="sponsor">
+        <div class="container">
+          <img src="../images/Home/Logo's.png" alt="sponsor" />
+        </div>
+      </div>
+      <!-- *newsletter -->
+      <section class="newsletter">
+        <div class="container">
+          <img src="../images/Home/Basket-2.png" alt="" />
+          <div class="newsletter__info">
+            <h2 class="newsletter__title">subscribe to newsletter</h2>
+            <form action="">
+              <input type="email" placeholder="enter your email address" />
+              <button class="btn">subscribe now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- *footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="col col-1">
+            <h4 class="footer__title">Store Location</h4>
+            <span class="bold-span">Address:</span>
+            <span>121 King Street Melbourne,3000,Australia</span>
+            <span class="bold-span">Email:</span>
+            <span>Info@Groxistore.Com</span>
+            <span class="bold-span">Phone:</span>
+            <span>+1 23 45 6789</span>
+          </div>
+          <div class="col">
+            <h4 class="footer__title">Usefull Links</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Check Out</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Shop</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="footer__title">Categories</h4>
+            <ul>
+              <li><a href="#">Fruits & Vegetable</a></li>
+              <li><a href="#">Dairy Products</a></li>
+              <li><a href="#">Package Foods</a></li>
+              <li><a href="#">Beverage</a></li>
+              <li><a href="#">Health & Wellness</a></li>
+              <li><a href="#">Meat Varieties</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 class="footer__title">Opening Ours</h4>
+            <ul>
+              <li><a class="bold-span" href="#">Monday - Saturday</a></li>
+              <li><a href="#">12:00 - 14:45</a></li>
+              <li><a class="bold-span" href="#">Sunday - Tharsday</a></li>
+              <li><a href="#">17:30 - 00:00</a></li>
+              <li><a class="bold-span" href="#">Friday - Saturday</a></li>
+              <li><a href="#">17:30 - 00:00</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="../js/app.js"></script>
+  </body>
 </html>

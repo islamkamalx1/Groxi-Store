@@ -1459,6 +1459,124 @@ html::-webkit-scrollbar-thumb:hover {
   padding-inline-start: 15px;
 }
 
+/* *Contact */
+.contact {
+  margin-block-end: 5rem;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .container .form__card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--back-blue);
+  justify-content: center;
+  align-items: center;
+}
+
+.form__card form {
+  padding: 3rem 2rem;
+}
+
+.form__card form h2 {
+  font-size: 2.8rem;
+  margin-block-end: 1rem;
+}
+
+.form__card form .inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-block-end: 1rem;
+}
+
+.form__card form .inputs input {
+  outline: 0;
+  border: 0;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+.form__card textarea {
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 180px;
+  margin-bottom: 1rem;
+  resize: none;
+}
+
+.form__card form .btn {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.form__card .reach-us {
+  background-color: var(--main-color);
+  color: var(--white);
+  padding: 3rem 4rem 3rem 3rem;
+}
+
+.form__card .reach-us h2 {
+  font-size: 2.8rem;
+  margin-block-end: 1rem;
+}
+
+.form__card .reach-us p {
+  font-weight: 200;
+  font-size: 1.2rem;
+  margin-block-end: 1rem;
+}
+
+.form__card .reach-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-block-end: 2rem;
+}
+
+.form__card .reach-box i {
+  font-size: 2rem;
+}
+
+.form__card .reach-box .reach-text {
+  margin-inline-start: 1rem;
+}
+
+.form__card .reach-box .reach-text h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-block-end: 0.5rem;
+}
+
+.form__card .reach-box .reach-text span {
+  color: #e9ebeb;
+  font-size: 1.2rem;
+  display: block;
+  line-height: 1.6;
+}
+
+/* *iframe */
+.iframe-container {
+  height: 600px;
+  width: 100%;
+  margin-block-end: 5rem;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none
+}
+
 /* *media 1199px */
 @media (max-width: 1199px) {
   .price__image {
@@ -1607,6 +1725,10 @@ html::-webkit-scrollbar-thumb:hover {
     width: 85px;
     height: 85px;
   }
+
+  .contact .container .form__card {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* *media 768px */
@@ -1726,6 +1848,19 @@ html::-webkit-scrollbar-thumb:hover {
 
   .rowProducts h3 {
     font-size: 1.6rem;
+  }
+
+  .contact .container .form__card {
+    width: 95%;
+  }
+
+  .contact .container .form__card .inputs {
+    grid-template-columns: 1fr;
+  }
+
+  .contact .container .form__card .reach-us {
+    width: 100%;
+    text-align: center;
   }
 }
 
